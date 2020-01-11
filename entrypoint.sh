@@ -25,6 +25,12 @@ done < "${INPUT_PATH_TO_LIST}"
 
 if [ "${INPUT_ARTIFACT}" == true ]; then
     tar -czvf Documents.tar.gz Documents/*
+    cd Documents
+    mkdir verbali interni esterni
+    mv -t verbali verbale*
+    mv -t interni norme* studio*
+    mv -t esterni piano* analisi* gloss*
+    cd ..
 fi
 
 if [ $i != 0 ]; then
