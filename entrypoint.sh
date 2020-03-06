@@ -27,7 +27,9 @@ if [ "${INPUT_ARTIFACT}" == true ]; then
     tar -czvf Documents.tar.gz Documents/*
     cd Documents
     mkdir verbali interni esterni
-    mv -t verbali verbale*
+    mkdir verbali/interni verbali/esterni
+    mv -t verbali/interni VI*
+    mv -t verbali/esterni VE*
     mv -t interni norme* studio*
     mv -t esterni piano* analisi* gloss*
     cd ..
