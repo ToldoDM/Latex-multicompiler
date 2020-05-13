@@ -31,7 +31,7 @@ if [ "${INPUT_ARTIFACT}" == true ]; then
     mv -t interni/verbali VI*
     mv -t esterni/verbali VE*
     mv -t interni norme* studio*
-    mv -t esterni piano* analisi* gloss*
+    mv -t esterni piano* analisi* gloss* manuale* allegato*
     cd ..
 fi
 
