@@ -1,4 +1,4 @@
-FROM danteev/texlive
+FROM ghcr.io/dante-ev/texlive:latest
 
 COPY entrypoint.sh /entrypoint.sh
 
